@@ -1,0 +1,2 @@
+SELECT products.product_id, products.name, products.uniit_of_measure, products.price_per_unit, unit_of_measurement.uom_name
+FROM products inner join unit_of_measurement on products.uniit_of_measure=unit_of_measurement.uom_id;
